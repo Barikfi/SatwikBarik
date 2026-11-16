@@ -1,0 +1,54 @@
+/* =====================================================
+   RESPONSIVE.CSS — Mobile & Tablet Breakpoints
+   Edit this file to adjust layout on smaller screens
+   ===================================================== */
+
+/* ---- Tablet (max-width: 900px) ---- */
+@media (max-width: 900px) {
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .subjects-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---- Mobile (max-width: 600px) ---- */
+@media (max-width: 600px) {
+
+  nav {
+    padding: 1rem 4%;
+  }
+
+  .nav-links {
+    gap: 1.2rem;
+  }
+
+  .nav-links a {
+    font-size: 0.75rem;
+  }
+
+  section {
+    padding: 5rem 4%;
+  }
+
+  .subjects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+  }
+}
