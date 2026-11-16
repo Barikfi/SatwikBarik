@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- =====================================================
+       EDIT YOUR INFO HERE
+       ===================================================== -->
+  <title>Satwik Barik — Educator & Tech Expert</title>
+  <meta name="description" content="Portfolio of a passionate Computer, Math and English Teacher.">
+
+  <!-- Favicon (add your own to images/favicon.png) -->
+  <!-- <link rel="icon" href="images/favicon.png" type="image/png"> -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+
+  <!-- =====================================================
+       CSS FILES (in load order — don't change the order)
+       ===================================================== -->
+  <link rel="stylesheet" href="css/variables.css">   <!-- Design tokens / colors / fonts  -->
+  <link rel="stylesheet" href="css/base.css">         <!-- Reset, body, shared utilities   -->
+  <link rel="stylesheet" href="css/navbar.css">       <!-- Top navigation                  -->
+  <link rel="stylesheet" href="css/hero.css">         <!-- Hero / landing section          -->
+  <link rel="stylesheet" href="css/about.css">        <!-- About / bio section             -->
+  <link rel="stylesheet" href="css/skills.css">       <!-- Expertise / skill cards         -->
+  <link rel="stylesheet" href="css/sections.css">     <!-- Subjects, Tools, Contact, Footer-->
+  <link rel="stylesheet" href="css/responsive.css">   <!-- Mobile / tablet breakpoints     -->
+</head>
+<body>
+
+  <!-- ===================================================
+       NAVBAR
+       =================================================== -->
+  <nav>
+    <!-- Edit the logo text below -->
+    <div class="nav-logo">S<span>.</span>Barik</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#subjects">Subjects</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- ===================================================
+       HERO
+       =================================================== -->
+  <section id="hero">
+    <div class="hero-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+
+    <div class="hero-content">
+      <!-- Edit badge text -->
+      <div class="hero-badge">
+        <span class="dot"></span> Available for Classes &amp; Tutoring
+      </div>
+
+      <!-- Edit your hero headline -->
+      <h1 class="hero-name">
+        Empowering<br>
+        <span class="accent">Minds</span> Through<br>
+        Education 
+      </h1>
+
+      <!-- Typed text — edit roles in js/main.js -->
+      <p class="hero-title">
+        <span id="typed-text"></span><span class="cursor"></span>
+      </p>
+
+      <!-- Edit tagline -->
+      <p class="hero-desc">
+        A passionate educator blending classical teaching with modern technology —
+        helping students master Mathematics, English, Programming, and beyond.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#subjects" class="btn-primary">Explore Subjects</a>
+        <a href="#contact"  class="btn-outline">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================================================
+       ABOUT
+       =================================================== -->
+  <section id="about">
+    <div class="about-grid">
+
+      <!-- Avatar column -->
+      <div class="about-avatar-wrap reveal">
+        <div class="avatar-ring"></div>
+        <div class="about-avatar">
+          <!--
+            TO USE A REAL PHOTO:
+            1. Put your photo in images/profile.jpg
+            2. Replace the emoji below with:
+               <img src="images/profile.jpg" alt="Your Name">
+            3. Uncomment the img rule in css/about.css
+          -->
+          <img src="images/profile.jpg" alt="Satwik Barik">
+        </div>
+      </div>
+
+      <!-- Bio column — EDIT ALL TEXT HERE -->
+      <div class="reveal">
+        <p class="section-label">// Who I Am</p>
+        <h2 class="section-title">
+          Teacher · Developer<br><span class="gold">· Mentor</span>
+        </h2>
+        <div class="divider"></div>
+
+        <p style="color:var(--muted); margin-bottom:1.2rem;">
+          I am a dedicated educator specialising in Computer Science, Mathematics, and English.
+          With a deep passion for both teaching and technology, I bridge the gap between
+          academic fundamentals and real-world digital skills.
+        </p>
+        <p style="color:var(--muted); margin-bottom:2rem;">
+          My goal is to make every concept approachable — whether it's a tricky grammar rule,
+          a complex SQL query, or building your first web page. Learning should be joyful,
+          practical, and impactful.
+        </p>
+
+        <!-- Edit stats -->
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-num">5+</div>
+            <div class="stat-label">Years Teaching</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">3</div>
+            <div class="stat-label">Core Subjects</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">12+</div>
+            <div class="stat-label">Skills &amp; Tools</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">∞</div>
+            <div class="stat-label">Student Impact</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===================================================
+       EXPERTISE — cards rendered by js/main.js
+       =================================================== -->
+  <section id="expertise">
+    <div class="reveal">
+      <p class="section-label">// Technical Skills</p>
+      <h2 class="section-title">Areas of <span class="gold">Expertise</span></h2>
+      <div class="divider"></div>
+      <p class="section-sub">Each skill refined through years of teaching and hands-on application.</p>
+    </div>
+    <div class="skills-grid">
+      <!-- Cards injected by js/main.js — edit the `skills` array there -->
+    </div>
+  </section>
+
+
+  <!-- ===================================================
+       SUBJECTS — edit cards below
+       =================================================== -->
+  <section id="subjects">
+    <div class="reveal">
+      <p class="section-label">// I Teach</p>
+      <h2 class="section-title">Core <span class="gold">Subjects</span></h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="subjects-grid">
+      <!-- SUBJECT CARD 1 — edit icon, title, desc -->
+      <div class="subject-card reveal">
+        <div class="subject-icon">🖥️</div>
+        <div class="subject-title">Computer Science</div>
+        <div class="subject-desc">
+          HTML, CSS, Java, Python, SQL, AI concepts — from fundamentals to advanced applications.
+        </div>
+      </div>
+
+      <!-- SUBJECT CARD 2 -->
+      <div class="subject-card reveal">
+        <div class="subject-icon">📐</div>
+        <div class="subject-title">Mathematics</div>
+        <div class="subject-desc">
+          Algebra, Arithmetic, Logic, Statistics — building strong problem-solving foundations.
+        </div>
+      </div>
+
+      <!-- SUBJECT CARD 3 -->
+      <div class="subject-card reveal">
+        <div class="subject-icon">📝</div>
+        <div class="subject-title">English Language</div>
+        <div class="subject-desc">
+          Grammar, Composition, Comprehension, Communication — mastering the English language.
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================================================
+       TOOLS — pills rendered by js/main.js
+       =================================================== -->
+  <section id="tools">
+    <div class="reveal">
+      <p class="section-label">// Tech Stack</p>
+      <h2 class="section-title">Tools &amp; <span class="gold">Technologies</span></h2>
+      <div class="divider"></div>
+      <p class="section-sub">A versatile toolkit spanning programming, data, productivity, and AI.</p>
+    </div>
+    <div class="tools-row reveal" id="tools-row">
+      <!-- Pills injected by js/main.js — edit the `tools` array there -->
+    </div>
+  </section>
+
+
+  <!-- ===================================================
+       CONTACT
+       =================================================== -->
+  <section id="contact">
+    <div class="contact-wrap">
+      <div class="reveal">
+        <p class="section-label">// Get In Touch</p>
+        <h2 class="section-title">Let's <span class="gold">Connect</span></h2>
+        <div class="divider"></div>
+        <p class="section-sub">
+          Have a question about classes, tutoring, or collaboration? Drop a message below.
+        </p>
+      </div>
+
+      <!-- Add action="mailto:you@email.com" to send emails -->
+      <form class="contact-form reveal" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="john@example.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <input type="text" placeholder="Interested in Python classes..." />
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell me more about what you're looking for..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send Message ✈</button>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- ===================================================
+       FOOTER — edit name & links
+       =================================================== -->
+  <footer>
+    <div class="footer-logo">S.Barik</div>
+    <div class="footer-copy">© 2026 · Crafted with passion for education</div>
+    <div class="footer-links">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </footer>
+
+
+  <!-- ===================================================
+       JAVASCRIPT
+       =================================================== -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
